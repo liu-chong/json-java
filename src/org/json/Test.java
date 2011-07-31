@@ -42,6 +42,7 @@ SOFTWARE.
  * @author JSON.org
  * @version 2011-05-22
  */
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class Test extends TestCase {
     public Test(String name) {
         super(name);

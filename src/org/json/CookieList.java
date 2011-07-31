@@ -31,6 +31,7 @@ import java.util.Iterator;
  * @author JSON.org
  * @version 2010-12-24
  */
+@SuppressWarnings("rawtypes")
 public class CookieList {
 
     /**
@@ -70,7 +71,7 @@ public class CookieList {
      */
     public static String toString(JSONObject jo) throws JSONException {
         boolean      b = false;
-        Iterator     keys = jo.keys();
+		Iterator     keys = jo.keys();
         String       string;
         StringBuffer sb = new StringBuffer();
         while (keys.hasNext()) {

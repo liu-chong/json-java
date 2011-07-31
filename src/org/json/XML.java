@@ -33,6 +33,7 @@ import java.util.Iterator;
  * @author JSON.org
  * @version 2011-02-11
  */
+@SuppressWarnings("rawtypes")
 public class XML {
 
     /** The Character '&'. */
@@ -397,7 +398,7 @@ public class XML {
         JSONArray    ja;
         JSONObject   jo;
         String       key;
-        Iterator     keys;
+		Iterator     keys;
         int          length;
         String       string;
         Object       value;
